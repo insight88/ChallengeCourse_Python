@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  <title>Reddit Reader</title>
+</head>
+
+<body>
+  <header>
+    <h1> Reddit Reader </h1>
+    <h3> Couldn't add subreddit </h3>
+  </header>
+
+  <main>
+    {% if error_no == "2" %}
+    <h4>That subreddit does not exist</h4>
+    <a href="/">◀ Go Back</a>
+    {% elif error_no == "1" %}
+    <h4>Write the name without/r/</h4>
+    <a href="/">◀ Go Back</a>
+    {% endif %}
+  </main>
+</body>
+</html>
